@@ -1,0 +1,50 @@
+{
+    "name": "webappstarterkit",
+    "version": "1.0.0",
+    "description": "Web App Starter Kit",
+    "scripts": {},
+    "author": "Keith Wedinger",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jkwuc89/webappstarterkit"
+    },
+    "dependencies": {
+        "whatwg-fetch": "^2.0.3"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.x",
+        "babel-core": "^6.26.x",
+        "babel-loader": "^7.1.x",
+        "babel-preset-env": "^1.6.1",
+        "babel-register": "^6.26.x",
+        "chai": "^4.1.x",
+        "chalk": "^2.3.x",
+        "cheerio": "^1.0.0-rc.2",
+        "compression": "^1.7.x",
+        "cross-env": "^5.1.x",
+        "css-loader": "^0.28.x",
+        "eslint": "^4.17.x",
+        "eslint-plugin-import": "^2.8.x",
+        "eslint-watch": "^3.1.x",
+        "express": "^4.16.x",
+        "extract-text-webpack-plugin": "^3.x.x",
+        "html-webpack-plugin": "^2.30.x",
+        "jsdom": "^11.6.x",
+        "json-schema-faker": "^0.4.x",
+        "json-server": "^0.12.x",
+        "localtunnel": "^1.8.x",
+        "mocha": "^5.x.x",
+        "nock": "^9.1.x",
+        "npm-run-all": "^4.1.x",
+        "nsp": "^3.1.x",
+        "numeral": "^2.x.x",
+        "open": "^0.0.x",
+        "rimraf": "^2.6.x",
+        "style-loader": "^0.20.x",
+        "webpack": "^3.10.x",
+        "webpack-dev-middleware": "^2.x.x",
+        "webpack-hot-middleware": "^2.21.x",
+        "webpack-md5-hash": "^0.0.x"
+    }
+}
