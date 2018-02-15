@@ -57,6 +57,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# Build output
+dist
+
 # IntelliJ IDEA IDE files
 .idea
 *.iml
