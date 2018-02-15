@@ -1,7 +1,6 @@
 // Webpack 3 Quickstarter
 // Based on: https://github.com/postNirjhor/webpack-boilerplate/blob/master/webpack.config.js
 const path = require("path"),
-    webpack = require("webpack"),
     CleanWebpackPlugin = require("clean-webpack-plugin"),
     HtmlWebpackPlugin = require("html-webpack-plugin"),
     ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -17,12 +16,12 @@ const config = {
     context: path.resolve(__dirname, "src"),
 
     entry: {
-        // relative path declaration
+        // This is relative to context path above
         app: "./app.js"
     },
 
     output: {
-        // absolute path declaration
+        // Absolute path declaration for build output
         path: path.resolve(__dirname, "dist"),
         filename: "./assets/js/[name].bundle.js"
     },
@@ -107,8 +106,7 @@ const config = {
         open: true
     },
 
-    devtool: "inline-source-map"
-
+    devtool: "source-map"
 };
 
 module.exports = config;

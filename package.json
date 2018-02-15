@@ -9,7 +9,8 @@
         "start:server": "babel-node buildScripts/srcServer.js",
         "build": "./node_modules/.bin/webpack",
         "build:prod": "./node_modules/.bin/webpack -p",
-        "watch": "./node_modules/.bin/webpack --watch"
+        "dev": "./node_modules/.bin/webpack-dev-server",
+        "watch": "./node_modules/.bin/webpack -d --watch"
     },
     "author": "Keith Wedinger",
     "license": "Apache-2.0",
