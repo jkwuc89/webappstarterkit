@@ -7,7 +7,7 @@
         "security-check": "nsp check",
         "start": "npm-run-all --parallel security-check start:server",
         "start:server": "babel-node buildScripts/srcServer.js",
-        "build": "npm-run-all --parallel security-check lint build:dev",
+        "build": "npm-run-all --parallel security-check lint build:dev test",
         "build:dev": "./node_modules/.bin/webpack",
         "build:prod": "./node_modules/.bin/webpack -p",
         "dev": "./node_modules/.bin/webpack-dev-server",
