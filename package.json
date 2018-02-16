@@ -21,8 +21,7 @@
         "type": "git",
         "url": "https://github.com/jkwuc89/webappstarterkit"
     },
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "babel-cli": "^6.26.x",
         "babel-core": "^6.26.x",
