@@ -22,7 +22,6 @@
         "url": "https://github.com/jkwuc89/webappstarterkit"
     },
     "dependencies": {
-        "whatwg-fetch": "^2.0.3"
     },
     "devDependencies": {
         "babel-cli": "^6.26.x",
