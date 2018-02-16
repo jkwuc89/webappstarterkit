@@ -7,7 +7,7 @@ const path = require("path"),
 
 // Create the extract text plugin instance which is used below in the plugins section
 const extractPlugin = new ExtractTextPlugin({
-    filename: "./assets/css/app.css"
+    filename: "./css/app.css"
 });
 
 const config = {
@@ -22,7 +22,7 @@ const config = {
     output: {
         // Absolute path declaration for build output
         path: path.resolve(__dirname, "dist"),
-        filename: "./assets/js/[name].bundle.js"
+        filename: "./js/[name].bundle.js"
     },
 
     module: {
@@ -49,7 +49,7 @@ const config = {
             // sass-loader with sourceMap activated
             {
                 test: /\.scss$/,
-                include: [path.resolve(__dirname, "src", "assets", "scss")],
+                include: [path.resolve(__dirname, "src", "scss")],
                 use: extractPlugin.extract({
                     use: [{
                             loader: "css-loader",

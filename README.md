@@ -12,3 +12,13 @@
     * `"ecmaVersion": 7,` - JS version is ES2016
 * **Karma** and **Jasmine** for unit testing
 
+## Directory Structure
+* **/** - Project configuration files
+  * **src**
+    * **assets** - Media files (images, fonts, etc.)
+    * **html** - HTML files and templates
+    * **js** - JavaScript source
+      * **tests** - Jasmine based unit tests
+    * **scss** - SCSS based styles
+  
+    

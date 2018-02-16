@@ -1,7 +1,7 @@
 "use strict";
 // Import of SCSS here is required to mark it as a dependency
 // and to enable extraction as CSS and injection of style into index.html
-import "../assets/scss/app.scss";
+import "../scss/app.scss";
 import numeral from "numeral";
 import moduleExample from "./moduleExample";
 
