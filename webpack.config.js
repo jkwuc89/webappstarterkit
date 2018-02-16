@@ -30,7 +30,8 @@ const config = {
             // babel-loader with "env" preset
             {
                 test: /\.js$/,
-                include: /src/,
+                // include: /src/,
+                include: [path.resolve(__dirname, "src", "js")],
                 exclude: [/node_modules/],
                 use: {
                     loader: "babel-loader",
@@ -42,6 +43,7 @@ const config = {
             // html-loader
             {
                 test: /\.html$/,
+                include: [path.resolve(__dirname, "src", "html")],
                 use: ["html-loader"]
             },
             // sass-loader with sourceMap activated
@@ -81,7 +83,6 @@ const config = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: ["file-loader"]
             }
-
         ]
     },
 
@@ -89,7 +90,7 @@ const config = {
         // Cleaning up only "dist" folder
         new CleanWebpackPlugin(["dist"]),
         new HtmlWebpackPlugin({
-            template: "index.html"
+            template: "html/index.html"
         }),
         // extract-text-webpack-plugin instance
         extractPlugin

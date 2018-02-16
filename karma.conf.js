@@ -26,6 +26,7 @@ module.exports = function (config) {
         webpack: webpackConfig,
 
         // Preprocess matching files before serving them to the browser
+        // This allows us to use ES6 inside the tests
         // Available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
         preprocessors: {
             "tests/**/*Spec.js": ["webpack"],
