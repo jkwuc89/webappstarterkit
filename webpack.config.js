@@ -1,4 +1,4 @@
-// Webpack 3 Quickstarter
+// Webpack Configuration
 // Based on: https://github.com/postNirjhor/webpack-boilerplate/blob/master/webpack.config.js
 const path = require("path"),
     CleanWebpackPlugin = require("clean-webpack-plugin"),
@@ -11,13 +11,12 @@ const extractPlugin = new ExtractTextPlugin({
 });
 
 const config = {
-
-    // absolute path for project root
+    // Absolute path for project root
     context: path.resolve(__dirname, "src"),
 
     entry: {
         // This is relative to context path above
-        app: "./app.js"
+        app: "./js/app.js"
     },
 
     output: {
@@ -32,7 +31,7 @@ const config = {
             {
                 test: /\.js$/,
                 include: /src/,
-                exclude: /node_modules/,
+                exclude: [/node_modules/],
                 use: {
                     loader: "babel-loader",
                     options: {
@@ -97,10 +96,10 @@ const config = {
     ],
 
     devServer: {
-        // static files served from here
+        // Static files served from here
         contentBase: path.resolve(__dirname, "./dist/assets/media"),
         compress: true,
-        // open app in localhost:2000
+        // Open app using localhost:2000
         port: 2000,
         stats: "errors-only",
         open: true
