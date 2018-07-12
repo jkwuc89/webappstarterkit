@@ -3,7 +3,7 @@
 
 let webpackConfig = require("./webpack.config.js");
 
-module.exports = function (config) {
+module.exports = function(config) {
     config.set({
 
         // Base path that will be used to resolve all patterns (eg. files, exclude)
@@ -15,8 +15,7 @@ module.exports = function (config) {
 
         // List of files / patterns under basePath above to load in the browser
         files: [
-            "tests/**/*Spec.js",
-            "tests/**/*.spec.js"
+            "tests/**/*Spec.js"
         ],
 
         // List of files / patterns to exclude

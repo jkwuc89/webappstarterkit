@@ -7,7 +7,7 @@
         "build:dev": "./node_modules/.bin/webpack --mode development",
         "build:prod": "./node_modules/.bin/webpack --mode production",
         "dev": "./node_modules/.bin/webpack-dev-server",
-        "lint": "esw webpack.config.* src buildScripts",
+        "lint": "esw webpack.config.* src",
         "lint:watch": "npm run lint -- --watch",
         "security-check": "nsp check",
         "test": "karma start",
